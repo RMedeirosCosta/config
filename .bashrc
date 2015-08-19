@@ -6,17 +6,21 @@
 [ -z "$PS1" ] && return
 
 # Variáveis de ambiente
-# Série Star Wars
 SW=/home/ricardo/Downloads/sw/
-SW_1=$SW/s1/
-SW_2=$SW/s2/
-SW_3=$SW/s3/
-SW_4=$SW/s4/
-SW_5=$SW/s5/
 PATH=$PATH:/usr/local/adt-bundle-linux/eclipse/
+
 # JDK
 JDK_HOME=/opt/jdk1.8.0_31/
 
+ # Projetos
+ PROJECTS=$HOME/projects/
+
+  # Tex
+  TEX=$PROJECTS/tex/
+
+   # Psicologia da Educação
+   PSICOLOGIA=$TEX/psicologia_da_educacao/
+  
 # Não armazenar as linhas duplicadas ou linhas que começam com espaço no historico
 HISTCONTROL=ignoreboth
  
