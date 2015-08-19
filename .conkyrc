@@ -126,8 +126,9 @@ ${color 3399FF}Temperature$color
 
 ${color 3399FF}Kernel Log$color
 
-${exec dmesg | tail -20}
+${exec dmesg | tail -10}
 
 ${color 3399FF}TODO$color
 
 ${exec cat ~/todo}
+
