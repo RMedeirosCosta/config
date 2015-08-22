@@ -125,10 +125,13 @@ ${color 3399FF}Temperature$color
    ${color #3399FF}Nvidia Graficcard:$color ${nvidia temp}°C
 
 ${color 3399FF}Kernel Log$color
+#${color 3399FF}Emails$color
 
+#   ${exec cat ~/.gmail/.gmail_top}
 ${exec dmesg | tail -10}
+
 
 ${color 3399FF}TODO$color
 
-${exec cat ~/todo}
+${exec cat ~/todo | cowsay -W 140 -f tux}
 
