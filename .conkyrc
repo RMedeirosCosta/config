@@ -124,12 +124,14 @@ ${color 3399FF}Temperature$color
    ${color #3399FF}CPU: $color ${acpitemp}°C
    ${color #3399FF}Nvidia Graficcard:$color ${nvidia temp}°C
 
-${color 3399FF}Kernel Log$color
+#${color 3399FF}Kernel Log$color
 #${color 3399FF}Emails$color
+${color 3399FF}Services$color
+
+${exec rc-status}
 
 #   ${exec cat ~/.gmail/.gmail_top}
-${exec dmesg | tail -10}
-
+#${exec dmesg | tail -10}
 
 ${color 3399FF}TODO$color
 
