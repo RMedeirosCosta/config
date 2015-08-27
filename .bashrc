@@ -12,6 +12,9 @@ PATH=$PATH:/usr/local/adt-bundle-linux/eclipse/
 # JDK
 JDK_HOME=/opt/jdk1.8.0_31/
 
+# Editor
+EDITOR=/usr/bin/emacs
+
  # Projetos
  PROJECTS=$HOME/projects/
 
