@@ -39,7 +39,6 @@ maximum_width 1300
 # Draw shades?
 draw_shades yes
 
-
 # Draw outlines?
 draw_outline no # amplifies text
 
@@ -79,11 +78,10 @@ uppercase no
 # stuff after 'TEXT' will be formatted on screen
 # #5C246E 3399FF
 TEXT
-${color 3399FF}$nodename$color      ${color #828282}$sysname 
-$kernel on 
-$machine
-#Incluir formatação
-$time$color 
+${color 3399FF}$nodename$color      ${color #828282}$sysname
+  $kernel on 
+  $machine
+  $time$color 
 
 ${color 3399FF}PROCESSING$color
    ${color #E1E4D6}${cpubar cpu1}
