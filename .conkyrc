@@ -129,5 +129,5 @@ ${exec rc-status}
 #${exec dmesg | tail -10}
 
 ${color 3399FF}TODO$color
-${exec cat ~/todo/todo | cowsay -W 140 -f tux}
+${exec cat ~/todo/main | cowsay -W 140 -f tux}
 
