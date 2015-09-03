@@ -1,4 +1,4 @@
-# maintain spacing between certain elements
+l# maintain spacing between certain elements
 use_spacer yes
 
 # set to yes if you want conky to be forked in the background
