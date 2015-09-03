@@ -88,10 +88,10 @@ ${color 3399FF}PROCESSING$color
    ${color #E1E4D6}${cpubar cpu2}
    ${color #E1E4D6}${cpubar cpu3}
    ${color #E1E4D6}${cpubar cpu4}
-   ${color #E1E4D6}${cpubar cpu5}
-   ${color #E1E4D6}${cpubar cpu6}
-   ${color #E1E4D6}${cpubar cpu7}
-   ${color #E1E4D6}${cpubar cpu8}
+#   ${color #E1E4D6}${cpubar cpu5}
+#   ${color #E1E4D6}${cpubar cpu6}
+#   ${color #E1E4D6}${cpubar cpu7}
+#   ${color #E1E4D6}${cpubar cpu8}
    
    ${color #3399FF}NAME             PID       CPU%      MEM%
    ${color #e5e5e5}${top name 1} ${top pid 1}   ${top cpu 1}    ${top mem 1}
@@ -111,14 +111,14 @@ ${color 3399FF}DATA$color
 	   ${color #3399FF}/home: $color  ${fs_free_perc 
 /home/ricardo}%  ${fs_free /home/ricardo}  ${color #E1E4D6}${fs_bar 6 /home/ricardo}$color
 
-   ${color #3399FF}Upload:$color  ${upspeed eth0}kb/s${color 910000}$color 
-   ${upspeedgraph eth0}
-   ${color #3399FF}Download:$color  ${downspeed eth0}kb/s$color
-   ${downspeedgraph eth0}
+#   ${color #3399FF}Upload:$color  ${upspeed eth0}kb/s${color 910000}$color 
+#   ${upspeedgraph eth0}
+#   ${color #3399FF}Download:$color  ${downspeed eth0}kb/s$color
+#   ${downspeedgraph eth0}
 
 ${color 3399FF}Temperature$color
    ${color #3399FF}CPU: $color ${acpitemp}°C
-   ${color #3399FF}Nvidia Graficcard:$color ${nvidia temp}°C
+#   ${color #3399FF}Nvidia Graficcard:$color ${nvidia temp}°C
 
 #${color 3399FF}Kernel Log$color
 #${color 3399FF}Emails$color
@@ -129,5 +129,5 @@ ${exec rc-status}
 #${exec dmesg | tail -10}
 
 ${color 3399FF}TODO$color
-${exec cat ~/todo | cowsay -W 140 -f tux}
+${exec cat ~/todo/todo | cowsay -W 140 -f tux}
 
