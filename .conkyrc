@@ -1,4 +1,4 @@
-l# maintain spacing between certain elements
+# maintain spacing between certain elements
 use_spacer yes
 
 # set to yes if you want conky to be forked in the background
@@ -111,10 +111,10 @@ ${color 3399FF}DATA$color
 	   ${color #3399FF}/home: $color  ${fs_free_perc 
 /home/ricardo}%  ${fs_free /home/ricardo}  ${color #E1E4D6}${fs_bar 6 /home/ricardo}$color
 
-#   ${color #3399FF}Upload:$color  ${upspeed eth0}kb/s${color 910000}$color 
-#   ${upspeedgraph eth0}
-#   ${color #3399FF}Download:$color  ${downspeed eth0}kb/s$color
-#   ${downspeedgraph eth0}
+   ${color #3399FF}Upload:$color  ${upspeed wlp7s0}kb/s${color 910000}$color 
+   ${upspeedgraph wlp7s0}
+   ${color #3399FF}Download:$color  ${downspeed wlp7s0}kb/s$color
+   ${downspeedgraph wlp7s0}
 
 ${color 3399FF}Temperature$color
    ${color #3399FF}CPU: $color ${acpitemp}°C
