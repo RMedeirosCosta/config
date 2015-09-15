@@ -9,7 +9,7 @@ use_xft yes
 # Xft font when Xft is enabled
 xftfont Bitstream Vera Sans Mono-7
 #xftfont Andale Mono-9
-#xftfont Clean-8
+n#xftfont Clean-8
 #xftfont cubicfive10:pixelsize=8
 #xftfont squaredance10:pixelsize=14
 #xftfont swf!t_v02:pixelsize=10
@@ -33,8 +33,8 @@ own_window_argb_value 0
 double_buffer yes
 
 # Minimum size of text area
-minimum_size 100 0
-maximum_width 1300
+minimum_size 100
+maximum_width 2000
 
 # Draw shades?
 draw_shades yes
@@ -111,10 +111,10 @@ ${color 3399FF}DATA$color
 	   ${color #3399FF}/home: $color  ${fs_free_perc 
 /home/ricardo}%  ${fs_free /home/ricardo}  ${color #E1E4D6}${fs_bar 6 /home/ricardo}$color
 
-   ${color #3399FF}Upload:$color  ${upspeed eth0}kb/s${color 910000}$color 
-   ${upspeedgraph eth0}
-   ${color #3399FF}Download:$color  ${downspeed eth0}kb/s$color
-   ${downspeedgraph eth0}
+   ${color #3399FF}Upload:$color  ${upspeed eno1}kb/s${color 910000}$color 
+   ${upspeedgraph eno1}
+   ${color #3399FF}Download:$color  ${downspeed eno1}kb/s$color
+   ${downspeedgraph eno1}
 
 ${color 3399FF}Temperature$color
    ${color #3399FF}CPU: $color ${acpitemp}°C
@@ -130,4 +130,5 @@ ${exec rc-status}
 
 ${color 3399FF}TODO$color
 ${exec cat ~/todo/main | cowsay -W 140 -f tux}
+#{exec cat ~/todo/main }
 
