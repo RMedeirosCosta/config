@@ -19,6 +19,10 @@ PACKAGE_USE=/etc/portage/package.use/
 # Editor
 EDITOR=/usr/bin/emacs
 
+# Portage
+MAKE=/etc/portage/make.conf
+PACKAGE_USE=/etc/portage/package.use/
+
  # Projetos
  PROJECTS=$HOME/projects/
 
