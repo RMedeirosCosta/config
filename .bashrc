@@ -12,6 +12,10 @@ PATH=$PATH:/usr/local/adt-bundle-linux/eclipse/
 # JDK
 JDK_HOME=/opt/jdk1.8.0_31/
 
+# Portage
+MAKE=/etc/portage.make.conf
+PACKAGE_USE=/etc/portage/package.use/
+
 # Editor
 EDITOR=/usr/bin/emacs
 
