@@ -1,7 +1,9 @@
 #-----------------------------------------------
 # Configurações Gerais
 #-----------------------------------------------
- 
+
+if [[ -z $DISPLAY ]] && [[ $(tty) = "/dev/tty1" ]]; then exec startx; fi
+
 # Se não estiver rodando interativamente, não fazer nada
 [ -z "$PS1" ] && return
 
