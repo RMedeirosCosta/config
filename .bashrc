@@ -11,8 +11,8 @@ if [[ -z $DISPLAY ]] && [[ $(tty) = "/dev/tty1" ]]; then exec startx; fi
 SW=/home/ricardo/Downloads/sw/
 PATH=$PATH:/usr/local/adt-bundle-linux/eclipse/
 
-# JDK
-JDK_HOME=/opt/jdk1.8.0_31/
+#Gephi
+/opt/gephi/gephi/
 
 # Portage
 MAKE=/etc/portage.make.conf
