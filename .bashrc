@@ -12,7 +12,7 @@ SW=/home/ricardo/Downloads/sw/
 PATH=$PATH:/usr/local/adt-bundle-linux/eclipse/
 
 #Gephi
-/opt/gephi/gephi/
+GEPHI=/opt/gephi/gephi/
 
 # Portage
 MAKE=/etc/portage.make.conf
