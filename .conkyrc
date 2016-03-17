@@ -34,7 +34,7 @@ double_buffer yes
 
 # Minimum size of text area
 minimum_size 100 0
-maximum_width 1300
+maximum_width 1600
 
 # Draw shades?
 draw_shades yes
@@ -129,5 +129,7 @@ ${exec rc-status}
 #${exec dmesg | tail -10}
 
 ${color 3399FF}TODO$color
-${exec cat ~/todo/main | cowsay -W 140 -f daemon}
+#${exec cat ~/todo/main | cowsay -W 140 -f daemon}
+${exec cat ~/todo/main }
+
 
