@@ -34,7 +34,7 @@ double_buffer yes
 
 # Minimum size of text area
 minimum_size 50 0
-maximum_width 1600
+maximum_width 500
 
 # Draw shades?
 draw_shades yes
