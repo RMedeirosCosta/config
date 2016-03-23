@@ -33,7 +33,7 @@ own_window_argb_value 0
 double_buffer yes
 
 # Minimum size of text area
-minimum_size 100 0
+minimum_size 50 0
 maximum_width 1600
 
 # Draw shades?
@@ -78,57 +78,54 @@ uppercase no
 # stuff after 'TEXT' will be formatted on screen
 # #5C246E 3399FF
 TEXT
-${color 3399FF}$nodename$color      ${color #828282}$sysname
+$nodename$color      ${color #828282}$sysname
   $kernel on 
   $machine
   $time$color 
 
-${color 3399FF}PROCESSING$color
-   ${color #E1E4D6}${cpubar cpu1}
-   ${color #E1E4D6}${cpubar cpu2}
-   ${color #E1E4D6}${cpubar cpu3}
-   ${color #E1E4D6}${cpubar cpu4}
-#   ${color #E1E4D6}${cpubar cpu5}
-#   ${color #E1E4D6}${cpubar cpu6}
-#   ${color #E1E4D6}${cpubar cpu7}
-#   ${color #E1E4D6}${cpubar cpu8}
+PROCESSING
+    ${cpubar cpu1}
+    ${cpubar cpu2}
+    ${cpubar cpu3}
+    ${cpubar cpu4}
+#    ${cpubar cpu5}
+#    ${cpubar cpu6}
+#    ${cpubar cpu7}
+#    ${cpubar cpu8}
    
-   ${color #3399FF}NAME             PID       CPU%      MEM%
+   NAME             PID       CPU%      MEM%
    ${color #e5e5e5}${top name 1} ${top pid 1}   ${top cpu 1}    ${top mem 1}
    ${color #c4c4c4}${top name 2} ${top pid 2}   ${top cpu 2}    ${top mem 2}
    ${color #a3a3a3}${top name 3} ${top pid 3}   ${top cpu 3}    ${top mem 3}
    ${color #828282}${top name 4} ${top pid 4}   ${top cpu 4}    ${top mem 4}
 
-${color 3399FF}DATA$color
-   ${color 3399FF}MEMORY$color
-	   ${color #3399FF}RAM: $color    $memperc%  ${color 
-#E1E4D6} ${membar 6} $color
-	   ${color #3399FF}Swap:$color    $swapperc%    ${color 
-#E1E4D6}${swapbar 6}$color
+ DATA$color
+    MEMORY$color
+      RAM:  $memperc%  ${membar 6} 
+      Swap: $swapperc%  ${swapbar 6}
 
-   ${color 3399FF}HARD DISK$color
-	   ${color #3399FF}/:	$color      ${fs_free_perc /}%  $fs_free  ${color #E1E4D6}${fs_bar 6 /}$color
-	   ${color #3399FF}/home: $color  ${fs_free_perc 
-/home/ricardo}%  ${fs_free /home/ricardo}  ${color #E1E4D6}${fs_bar 6 /home/ricardo}$color
+    HARD DISK$color
+      /:     ${fs_free_perc /}%   $fs_free  ${fs_bar 6 /}
+      /home: ${fs_free_perc /home/ricardo}%  ${fs_free /home/ricardo}   ${fs_bar 6 /home/ricardo}
 
-   ${color #3399FF}Upload:$color  ${upspeed wlp7s0}kb/s${color 910000}$color 
-   ${upspeedgraph wlp7s0}
-   ${color #3399FF}Download:$color  ${downspeed wlp7s0}kb/s$color
-   ${downspeedgraph wlp7s0}
+ Upload:  ${upspeed wlp7s0}kb/s
+    ${upspeedgraph wlp7s0}
+ Download:$color  ${downspeed wlp7s0}kb/s
+    ${downspeedgraph wlp7s0}
 
-${color 3399FF}Temperature$color
-   ${color #3399FF}CPU: $color ${acpitemp}°C
+ Temperature$color
+    CPU: ${acpitemp}°C
 #   ${color #3399FF}Nvidia Graficcard:$color ${nvidia temp}°C
 
-#${color 3399FF}Kernel Log$color
-#${color 3399FF}Emails$color
-${color 3399FF}Services$color
+# Kernel Log$color
+# Emails$color
+Services$color
 ${exec rc-status}
 
 #   ${exec cat ~/.gmail/.gmail_top}
 #${exec dmesg | tail -10}
 
-${color 3399FF}TODO$color
+TODO$color
 #${exec cat ~/todo/main | cowsay -W 140 -f daemon}
 ${exec cat ~/todo/main }
 
