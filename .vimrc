@@ -35,4 +35,4 @@ set hlsearch
 set expandtab
 
 " backspace respeitar indentação
-set softtabstop
+set softtabstop=2
